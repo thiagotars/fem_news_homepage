@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="output.css">
+    <title>News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body class="relative bg-offWhite">
+    
+    <!-- MOBILE MENU -->
+    <div class="md:hidden">
+        <div id="menu" class="absolute hidden flex-col h-full pl-6 pr-48 pt-44 space-y-8 text-veryDarkBlue bg-white right-0 bottom-0">
+            <a class="hover:text-softRed transition-colors duration-300" href="#">Home</a>
+            <a class="hover:text-softRed transition-colors duration-300"  href="#">New</a>
+            <a class="hover:text-softRed transition-colors duration-300"  href="#">Popular</a>
+            <a class="hover:text-softRed transition-colors duration-300"  href="#">Trending</a>
+            <a class="hover:text-softRed transition-colors duration-300"  href="#">Categories</a>
+        </div>
+    </div>   
+
+    <!-- HEADER SECTION -->
+    <header class="relative container mx-auto max-w-2xl md:max-w-[1100px]">
+        <div class="flex pt-10 pb-10 px-4 justify-between items-center md:pt-20 md:pb-12 xl:px-0">
+            <img src="../assets/images/logo.svg" alt="">
+            <nav class="hidden md:flex space-x-10 text-darkGrayishBlue">
+                <a class="hover:text-softRed transition-colors duration-300" href="#">Home</a>
+                <a class="hover:text-softRed transition-colors duration-300" href="#">New</a>
+                <a class="hover:text-softRed transition-colors duration-300" href="#">Popular</a>
+                <a class="hover:text-softRed transition-colors duration-300" href="#">Trending</a>
+                <a class="hover:text-softRed transition-colors duration-300" href="#">Categories</a>
+            </nav>
+            
+            <!-- HAMBURGUE MENU -->
+            <button id="menu-btn" class="block hamburguer mt-2 z-10 md:hidden focus:outline-none">
+                <span class="hamburguer-top"></span>
+                <span class="hamburguer-middle"></span>
+                <span class="hamburguer-bottom"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="pb-20">
+        <!-- GRID -->
+        <div class="container gap-8 px-4 mx-auto max-w-2xl md:max-w-[1100px] md:grid md:grid-cols-3 xl:px-0">
+            <!-- MAIN SECTION -->
+            <div class="md:col-span-2">
+                <img class="mb-5 sm:hidden mx-auto" src="/assets/images/image-web-3-mobile.jpg" alt="">
+                <img class="hidden mb-9 sm:flex" src="/assets/images/image-web-3-desktop.jpg" alt="">
+                <div class="mt-8 mb-14 md:gap-x-8 md:grid md:grid-cols-2 md:my-0">
+                    <h1 class="mb-6 text-4xl font-bold text-veryDarkBlue md:mb-0 md:text-6xl sm:text-5xl">The Bright Future of Web 3.0?</h1>
+                    <div class="">
+                        <p class="mb-10 text-darkGrayishBlue"> We dive into the next evolution of the web that claims to put 
+                            the power of the platforms back into the hands of the people. 
+                            But is it really fulfilling its promise?
+                        </p>
+                        <button class="bg-softRed text-white text-sm font-bold py-4 px-10 hover:bg-black transition-colors duration-300">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDE -->
+            <aside class="flex flex-col mb-12 py-9 px-5 text-3xl font-bold bg-veryDarkBlue md:mb-0">
+                <h2 class="mb-7 text:3xl text-softOrange font-bold md:text-4xl">New</h2>
+                <div class="flex flex-col justify-between h-full">
+                    <div class="flex flex-col space-y-3 mb-6 text-white">
+                        <a class="font-bold text-lg text-white hover:text-softOrange transition-colors duration-300" href="#">Hydrogen VS Electric Cars</a>
+                        <p class="font-normal leading-normal text-grayishBlue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                    <hr class="divider">
+                    <div class="flex flex-col space-y-3 my-6">
+                        <a class="font-bold text-lg text-white hover:text-softOrange transition-colors duration-300" href="#">The Downsides of AI Artistry</a>
+                        <p class="font-normal leading-normal text-grayishBlue">What are the possible adverse effects of on-demand AI image generation?</p>
+                    </div class="mb-8 md:mb-0">
+                    <hr class="divider">
+                    <div class="flex flex-col space-y-3 mt-6">
+                        <a class="font-bold text-lg text-white hover:text-softOrange transition-colors duration-300" href="#">Is VC Funding Drying Up?</a>
+                        <p class="font-normal leading-normal text-grayishBlue">
+                            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- BOTTOM ARTICLES -->
+            <article class="flex mb-8 space-x-4 md:mt-10 md:max-h-32 md:space-x-4">
+                <img class="article-image" src="/assets/images/image-retro-pcs.jpg" alt="">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-4xl text-grayishBlue font-extrabold">01</h2>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <a class="text-lg font-bold hover:text-softRed transition-colors duration-300" href="#">Reviving Retro PCs</a>
+                        <p>What happens when old PCs are given modern upgrades?</p>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="flex mb-8 space-x-4 md:mt-10 md:max-h-32 md:space-x-4">
+                <img class="article-image" src="/assets/images/image-top-laptops.jpg" alt="">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-4xl text-grayishBlue font-extrabold">02</h2>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <a class="text-lg font-bold hover:text-softRed transition-colors duration-300" href="#"> Top 10 Laptops of 2022</a>
+                        <p>Our best picks for various needs and budgets.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex space-x-4 md:mt-10 md:max-h-32 md:space-x-4">
+                <img class="article-image" src="/assets/images/image-gaming-growth.jpg" alt="">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-4xl text-grayishBlue font-extrabold">03</h2>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <a class="text-lg font-bold hover:text-softRed transition-colors duration-300" href="#">The Growth of Gaming</a>
+                        <p>How the pandemic has sparked fresh opportunities.</p>
+                    </div>
+                </div>
+            </article>
+        
+            
+        </div>
+    </div>
+    <script src="../dist/script.js"></script>
+</body>
+</html>
