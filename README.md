@@ -22,10 +22,10 @@ Users should be able to:
 ### Screenshot
 
 - Desktop
-[](/screenshots/Screenshot%202022-12-21%20at%2014-27-55%20Frontend%20Mentor%20News%20homepage.png)
+![](/screenshots/Screenshot%202022-12-21%20at%2014-27-55%20Frontend%20Mentor%20News%20homepage.png)
 
 - Mobile
-[](/screenshots/Screenshot%202022-12-21%20at%2014-33-19%20Frontend%20Mentor%20News%20homepage.png)
+![](/screenshots/Screenshot%202022-12-21%20at%2014-33-19%20Frontend%20Mentor%20News%20homepage.png)
 
 
 ### Links
