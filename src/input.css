@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter';
+}
+
+p,a {
+    font-size: 15px;
+    margin: 0px;
+}
+
+button {
+    letter-spacing: .25rem;
+}
+
+.divider {
+    border-color: hsl(236, 13%, 42%);
+}
+
+.article-image {
+    height: 127px;
+    max-width: 100px;
+}
+
+.hamburguer {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburguer-top,
+.hamburguer-middle,
+.hamburguer-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: hsl(240, 100%, 5%);
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburguer-middle {
+    transform: translateY(7px);
+}
+
+.hamburguer-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburguer-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburguer-middle {
+    display: none;
+}
+
+.open .hamburguer-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
